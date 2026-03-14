@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magic Jester Match</title>
+
+<style>
+body {
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#1b1b2f,#162447);
+    color:white;
+    text-align:center;
+}
+
+.container {
+    padding:30px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding:25px;
+    border-radius:18px;
+    backdrop-filter: blur(10px);
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+    margin-top:20px;
+}
+
+button {
+    padding:14px 20px;
+    border:none;
+    border-radius:12px;
+    margin:8px;
+    background:linear-gradient(45deg,#e43f5a,#ff8a00);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover {
+    transform:scale(1.05);
+}
+
+h1 {
+    color:#ff8a00;
+}
+
+footer {
+    margin-top:30px;
+    opacity:0.7;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Magic Jester Match</h1>
+
+    <div class="card">
+        <h2>About the Developer</h2>
+        <p><b>Developer Name:</b> Drydens</p>
+        <p><b>Account:</b> bugoguxed278@gmail.com</p>
+        <p>I am a beginner developer working passionately on creating fun and valuable mobile experiences.</p>
+    </div>
+
+    <div class="card">
+        <h2>About the App</h2>
+        <p>Magic Jester Match is a magical puzzle adventure designed to bring joy and relaxation.</p>
+        <p>Future updates will include new mechanics, improvements and optional monetization.</p>
+    </div>
+
+    <div>
+        <button onclick="go('privacy.html')">Privacy Policy</button>
+        <button onclick="go('support.html')">Support</button>
+        <button onclick="go('marketing.html')">Marketing Info</button>
+    </div>
+
+    <footer>
+        © 2026 Drydens
+    </footer>
+</div>
+
+<script>
+function go(page){
+    window.location.href = page;
+}
+</script>
+
+</body>
+</html>
